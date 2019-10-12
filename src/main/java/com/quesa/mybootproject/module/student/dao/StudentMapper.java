@@ -1,7 +1,6 @@
-package com.quesa.mybootproject.module.user.dao;
+package com.quesa.mybootproject.module.student.dao;
 
-import com.quesa.mybootproject.module.user.entity.Student;
-import org.apache.ibatis.annotations.Param;
+import com.quesa.mybootproject.module.student.entity.Student;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 import com.quesa.mybootproject.common.persistence.BaseDao;

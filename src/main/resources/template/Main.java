@@ -11,12 +11,12 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException, TemplateException {
 
-        Constants.projectOutPath = "F:/IdeaProjects/mybootproject/src/main/java/";//项目路径
+        Constants.projectOutPath = "F:/QuesaGithub/quesa-boot/src/main/java/";//项目路径
 //        Constants.projectOutPath = "c:/qypms/qypms/src/main/java/";//项目路径
         String rootSrc = "com.quesa.mybootproject.module.";//主模块路径D:\IdeaProjects\qypms-boot
         //-------------------------------   需要使用者设置-start  设置完成后运行即可---------------------------
-        Constants.modulePage = "user";
-        Constants.tableName = "student";//数据库表名
+        Constants.modulePage = "score";
+        Constants.tableName = "score";//数据库表名
         Constants.entityName = StringUtil.toPascalCase(Constants.tableName);//实体类名
         Constants.authorName = "quesa";//作者名字
         //-------------------------------   需要使用者设置-end  ---------------------------

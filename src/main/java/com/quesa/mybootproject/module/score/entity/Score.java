@@ -1,4 +1,4 @@
-package com.quesa.mybootproject.module.user.entity;
+package com.quesa.mybootproject.module.score.entity;
 import java.io.Serializable;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.JSONException;
@@ -18,20 +18,20 @@ import lombok.experimental.Accessors;
  **/
 @Data
 @Accessors(chain = true)
-@Table(name = "student")
-public class Student extends DataEntity<Student>{
+@Table(name = "score")
+public class Score extends DataEntity<Score>{
 
 	/****/
 	@Column(name = "id_")
 	private String id;
 
-	/**姓名**/
-	@Column(name = "name_")
-	private String name;
+	/**学生id**/
+	@Column(name = "stu_id_")
+	private String stuId;
 
-	/**性别**/
-	@Column(name = "sex_")
-	private Integer sex;
+	/**分数**/
+	@Column(name = "score_")
+	private Double score;
 
 	/**创建时间**/
 	@Column(name = "ct_")
@@ -41,7 +41,7 @@ public class Student extends DataEntity<Student>{
 
 	@Override
 	public JSONObject toJSONObjcet() throws JSONException{
-		JSONObject json = new JSONObject();		json.put("id", null == id ? "" : id);		json.put("name", null == name ? "" : name);		json.put("sex", null == sex ? "" : sex);		json.put("ct", null == ct ? "" : DateUtil.getDateToString(ct));
+		JSONObject json = new JSONObject();		json.put("id", null == id ? "" : id);		json.put("stuId", null == stuId ? "" : stuId);		json.put("score", null == score ? "" : score);		json.put("ct", null == ct ? "" : DateUtil.getDateToString(ct));
 		return json;
 	}
 }

@@ -237,7 +237,7 @@
                             <!-- Class-Path 前缀 -->
                             <classpathPrefix>lib/</classpathPrefix>
                             <!-- main全限定包名 -->
-                            <mainClass>com.quesa.mybootproject.MybootprojectApplication</mainClass>
+                            <mainClass>com.quesa.mybootproject.Application</mainClass>
                         </manifest>
                     </archive>
                     <outputDirectory>d:/jar/quesa</outputDirectory>

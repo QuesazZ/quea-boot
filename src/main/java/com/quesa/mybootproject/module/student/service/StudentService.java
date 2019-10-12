@@ -1,7 +1,7 @@
-package com.quesa.mybootproject.module.user.service;
+package com.quesa.mybootproject.module.student.service;
 
-import com.quesa.mybootproject.module.user.entity.Student;
-import com.quesa.mybootproject.module.user.dao.StudentMapper;
+import com.quesa.mybootproject.module.student.entity.Student;
+import com.quesa.mybootproject.module.student.dao.StudentMapper;
 import org.springframework.stereotype.Service;
 import com.quesa.mybootproject.common.service.BaseService;
 /**

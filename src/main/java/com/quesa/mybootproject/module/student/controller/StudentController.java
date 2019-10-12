@@ -1,4 +1,4 @@
-package com.quesa.mybootproject.module.user.controller;
+package com.quesa.mybootproject.module.student.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.quesa.mybootproject.common.controller.AccessRequired;
@@ -10,15 +10,14 @@ import com.quesa.mybootproject.common.util.StringUtil;
 import com.quesa.mybootproject.common.constants.Constant;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import com.quesa.mybootproject.module.user.service.StudentService;
-import com.quesa.mybootproject.module.user.entity.Student;
+import com.quesa.mybootproject.module.student.service.StudentService;
+import com.quesa.mybootproject.module.student.entity.Student;
 
 /**
  * 控制层
