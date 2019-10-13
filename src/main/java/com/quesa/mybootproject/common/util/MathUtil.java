@@ -268,10 +268,11 @@ public class MathUtil {
     }
 
     /**
-     * 返回两个double的商 first除以second。
+     * 返回两个double的商 first除以second。 四舍五入保留decimals位小数
      *
      * @param first  第一个double
      * @param second 第二个double
+     * @param decimals 保留小数位
      * @return double
      */
     public static double divideDouble(double first, double second ,int decimals) {
@@ -393,42 +394,18 @@ public class MathUtil {
         return randouble.intValue() + minNum;
     }
 
-    /**
-     * 格式化double指定位数小数。例如将11.123格式化为11.1。
-     *
-     * @param value    原double数字。
-     * @param decimals 小数位数。
-     * @return 格式化后的double，注意为硬格式化不存在四舍五入。
-     */
-    public static String formatDoubleTwo(double value, int decimals) {
-        String doubleStr = "" + value;
-        int index = doubleStr.indexOf(".") != -1 ? doubleStr.indexOf(".") : doubleStr.indexOf(",");
-        // Decimal point can not be found...
-        if (index == -1) {
-            return doubleStr;
-        }
-        // Truncate all decimals
-        if (decimals == 0) {
-            return doubleStr.substring(0, index);
-        }
-        int len = index + decimals + 1;
-        if (len >= doubleStr.length()) {
-            len = doubleStr.length();
-        }
-        double d = Double.parseDouble(doubleStr.substring(0, len));
-        return String.valueOf(d);
-    }
-
 
     /**
      * 保留两位小数
      */
     public static DecimalFormat df = new DecimalFormat("######0.00");
 
+
     /**
      * 保留一位小数
      */
     public static DecimalFormat dfOne = new DecimalFormat("######0.0");
+
 
     //计算比率
     public static String accuracy(double num, double total, int scale) {

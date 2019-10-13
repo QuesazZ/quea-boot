@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *s
+ *
  */
 public class CheckMobile {
     // \b 是单词边界(连着的两个(字母字符 与 非字母字符) 之间的逻辑上的间隔),

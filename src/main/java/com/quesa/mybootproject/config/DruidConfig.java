@@ -80,8 +80,6 @@ public class DruidConfig {
     @Value("${spring.datasource.logSlowSql}")
     private String logSlowSql;
 
-//    @Value("${spring.datasource.connectionProperties}")
-//    private String connectionProperties;
 
 //    @ConfigurationProperties(prefix = "spring.datasource")
 //    @Bean
@@ -144,7 +142,6 @@ public class DruidConfig {
         datasource.setTestOnReturn(testOnReturn);
         datasource.setRemoveAbandoned(removeAbandoned);
         datasource.setRemoveAbandonedTimeout(removeAbandonedTimeout);
-//        datasource.setConnectionProperties(connectionProperties);
         try {
             datasource.setFilters(filters);
         } catch (SQLException e) {
